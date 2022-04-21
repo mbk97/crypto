@@ -1,0 +1,55 @@
+import {
+  BtcSvg,
+  BnbSvg,
+  EthSvg,
+  UsdtSvg,
+  MoreSvg,
+  ChartOneSvg,
+  ChartTwoSvg,
+  ChartThreeSvg,
+  ChartFourSvg,
+} from "assets";
+
+export const MarketData = [
+  {
+    id: 1,
+    title: "BTC",
+    coinName: "BITCOIN",
+    readMore: MoreSvg,
+    coinImage: BtcSvg,
+    chart: ChartOneSvg,
+    price: "$56,623.54",
+    percent: "1.41%",
+  },
+
+  {
+    id: 2,
+    title: "ETH",
+    coinName: "ETHEREUM",
+    readMore: MoreSvg,
+    coinImage: EthSvg,
+    chart: ChartTwoSvg,
+    price: "$4,267.90",
+    percent: "2.22%",
+  },
+  {
+    id: 3,
+    title: "BNB",
+    coinName: "BINANCE",
+    readMore: MoreSvg,
+    coinImage: BnbSvg,
+    chart: ChartThreeSvg,
+    price: "$587.74",
+    percent: "0.82%",
+  },
+  {
+    id: 4,
+    title: "USDT",
+    coinName: "TETHER",
+    readMore: MoreSvg,
+    coinImage: UsdtSvg,
+    chart: ChartFourSvg,
+    price: "$0.9998",
+    percent: "0.03%",
+  },
+];
