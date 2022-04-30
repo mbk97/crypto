@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CategoryContainer,
   CategoryContentOne,
@@ -12,9 +12,16 @@ import { SubHeader, Subtitle } from "Components/Global/Title";
 import { BsSearch } from "react-icons/bs";
 import Table from "./MarketTable/Table";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 const Update = () => {
+  const [search, setSearch] = useState("");
+
+  console.log(search);
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <UpdateWrapper>
       <SubHeader>Market Update</SubHeader>
@@ -26,12 +33,17 @@ const Update = () => {
           <InputIcon>
             <BsSearch className="input_icon" />
           </InputIcon>
-          <Input type="text" placeholder="Search Coin" />
+          <Input
+            type="text"
+            placeholder="Search Coin"
+            value={search}
+            onChange={handleChange}
+          />
         </CategoryContentTwo>
       </CategoryContainer>
-      <Table />
+      <Table search={search} />
       <LinkWrapper>
-        <Link to="" className="see_all">
+        <Link to="allCoins" className="see_all">
           See All Coins
         </Link>
       </LinkWrapper>
