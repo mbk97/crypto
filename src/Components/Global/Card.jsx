@@ -15,7 +15,11 @@ const Card = ({ children }) => {
   return <CardWrapper>{children}</CardWrapper>;
 };
 
-const CardImg = styled.img``;
+const CardImg = styled.img`
+  height: 50px;
+  border-radius: 50%;
+  height: 50px;
+`;
 
 const CardText = styled.p`
   font-family: "Roboto";
@@ -32,6 +36,13 @@ const CardTextTwo = styled.p`
   font-family: "Roboto";
   font-style: normal;
   margin: 0;
+
+  .coin-percent.red {
+    color: red;
+  }
+  .coin-percent.green {
+    color: #0fae96;
+  }
 `;
 
 const FeatureCard = styled(CardWrapper)`
