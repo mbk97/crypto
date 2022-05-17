@@ -25,7 +25,7 @@ import MarketSkeleton from "Components/Global/Loaders/MarketSkeleton";
 const MarketTrend = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
-  console.log(loading);
+  // console.log(loading);
 
   useEffect(() => {
     dispatch(trendCoinAction({ onSuccess, onError }));

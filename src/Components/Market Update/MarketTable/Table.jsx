@@ -61,7 +61,7 @@ const Table = ({ search }) => {
               <TableData>
                 {name} | <span>{symbol}</span>
               </TableData>
-              <TableData>{current_price.toLocaleString()} $</TableData>
+              <TableData>$ {current_price.toLocaleString()} </TableData>
               <TableData
                 className={price_change_percentage_24h < 0 ? "red" : "green"}
               >

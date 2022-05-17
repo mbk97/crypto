@@ -54,6 +54,7 @@ const ArticleHeader = styled(SmallHeader)`
   font-size: 20px;
   text-align: left;
   padding-left: 10px;
+  height: 80px;
   text-transform: lowercase;
 `;
 
@@ -61,6 +62,7 @@ const ArticleText = styled(SmallText)`
   font-size: 14px;
   text-align: left;
   padding-left: 10px;
+  /* height: 200px; */
 `;
 
 const ArticleLabel = styled.div`

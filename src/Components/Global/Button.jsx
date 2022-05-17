@@ -40,6 +40,7 @@ const CoinBtn = styled.button`
   font-size: 10px;
   line-height: 12px;
   color: #000000;
+  text-transform: uppercase;
 `;
 
 const LearnBtn = styled(Button)`

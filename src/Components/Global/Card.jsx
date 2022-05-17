@@ -18,7 +18,13 @@ const Card = ({ children }) => {
 const CardImg = styled.img`
   height: 50px;
   border-radius: 50%;
-  height: 50px;
+  width: 50px;
+`;
+
+const NewsImg = styled.img`
+  height: 150px;
+  width: 100%;
+  border-radius: 10px 10px 0 0px;
 `;
 
 const CardText = styled.p`
@@ -54,8 +60,13 @@ const FeatureCard = styled(CardWrapper)`
 
 const ArticleCard = styled(FeatureCard)`
   padding: 0px 0px 16px;
-  height: 400px;
+  height: 430px;
   width: 297px;
+
+  .see_more {
+    color: #0fae96;
+    padding-left: 10px;
+  }
 `;
 
 const FeatureCardText = styled(CardText)`
@@ -96,4 +107,5 @@ export {
   FeatureCardTextTwo,
   LinkContainer,
   ArticleCard,
+  NewsImg,
 };
