@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import Main from "Components/Main/Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "Components/Footer/Footer";
-// import AllCoins from "Components/AllCoins/AllCoins";
+import AllCoins from "Components/All Coins/AllCoins";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <Main />
         <Routes>
-          {/* <Route path="allCoins" exact element={<AllCoins />} /> */}
+          <Route path="/allCoins" exact element={<AllCoins />} />
         </Routes>
         <Footer />
       </Router>

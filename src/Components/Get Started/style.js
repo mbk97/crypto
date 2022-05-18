@@ -4,8 +4,9 @@ export const GetStartedWrapper = styled.div`
   margin-top: 4rem;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 // FOOTER LOGO
 
-export const FooterLogoWrapper = styled.div``;
+export const FooterLogoWrapper = styled.div`
+  @media (max-width: 768px) {
+    margin-left: 3rem;
+  }
+`;
 
 export const FooterSvgWrapper = styled.div`
   width: 200px;

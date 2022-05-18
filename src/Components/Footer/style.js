@@ -28,11 +28,14 @@ export const FooterContainerTwo = styled.div`
   display: flex;
   /* justify-content: space-around; */
   justify-content: space-between;
-  text-align: left;
+  // text-align: left;
 
   @media (max-width: 768px) {
     width: 95vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+    gap: 30px;
   }
 `;
