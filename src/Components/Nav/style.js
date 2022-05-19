@@ -8,30 +8,23 @@ export const Nav = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    display: none;
     left: -900px;
     top: 0px;
-    /* background: rgba(255, 255, 255, 0.81); */
     background: #11011e;
-    width: 0%;
+    width: 65%;
     align-items: flex-start;
     padding: 30px 10px;
     flex-direction: column;
-    transition: all 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
   }
 
   &.mobile_nav {
-    width: 60%;
     left: 0;
-    display: block;
-    transition: all 0.5s ease-in-out;
-
-    /* add transition */
   }
 `;
 
 export const NavContainer = styled.div`
-  transition: all 0.5s ease-in-out;
+  transition: 1s;
 `;
 
 export const NavListWrapper = styled.ul`
@@ -48,7 +41,7 @@ export const NavListWrapper = styled.ul`
     width: 0px;
     display: flex;
     flex-direction: column;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
   }
 `;
 

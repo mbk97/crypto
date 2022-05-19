@@ -35,7 +35,7 @@ export const FooterContainerTwo = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: 1.8rem;
     gap: 30px;
   }
 `;

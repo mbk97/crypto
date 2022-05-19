@@ -6,11 +6,10 @@ export const MarketWrapper = styled.div`
 `;
 
 export const MarketCardContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   gap: 19px;
-  justify-content: center;
 `;
 
 export const CardHeader = styled.div`

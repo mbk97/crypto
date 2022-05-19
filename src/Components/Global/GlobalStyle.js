@@ -5,8 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 20px 50px;
     background: #11011e;
-    /* background: red; */
-    /* background:white; */
+    overflow-x:hidden;
     color:white;
     font-family: 'Roboto', sans-serif;
 

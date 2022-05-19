@@ -9,6 +9,10 @@ const CardWrapper = styled.div`
   padding: 18px 20px 20px 19px;
   width: 297px;
   height: 220px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Card = ({ children }) => {
@@ -56,6 +60,9 @@ const FeatureCard = styled(CardWrapper)`
   height: 300px;
   backdrop-filter: blur(200px);
   padding: 30px 30px 30px 28px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ArticleCard = styled(FeatureCard)`
@@ -66,6 +73,10 @@ const ArticleCard = styled(FeatureCard)`
   .see_more {
     color: #0fae96;
     padding-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
