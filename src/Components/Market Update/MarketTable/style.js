@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TableWrapper = styled.div`
-  background: rgba(255, 255, 255, 0.02);
   border-radius: 5px;
   margin-top: 3rem;
 `;
@@ -11,6 +10,7 @@ export const TableComponent = styled.table`
   border-collapse: collapse;
   border: 1px solid rgba(255, 255, 255, 0.05);
   overflow-x: auto;
+  background: rgba(255, 255, 255, 0.02);
 `;
 
 export const TableRow = styled.tr`

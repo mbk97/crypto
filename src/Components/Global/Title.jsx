@@ -41,6 +41,13 @@ const SmallText = styled(SubHeader)`
   color: #b6b6b6;
 `;
 
+const ErrorText = styled(SubHeader)`
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const SmallHeader = styled(SubHeader)`
   font-family: "Raleway";
   font-style: normal;
@@ -51,9 +58,10 @@ const SmallHeader = styled(SubHeader)`
 `;
 
 const ArticleHeader = styled(SmallHeader)`
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   padding-left: 10px;
+  margin-bottom: 40px;
   height: 80px;
   text-transform: lowercase;
 `;
@@ -105,4 +113,5 @@ export {
   ArticleLabel,
   FooterLink,
   FooterTitle,
+  ErrorText,
 };

@@ -15,7 +15,7 @@ import Action from "./ActionToLearn/Action";
 
 const Trend = () => {
   return (
-    <TrendWrapper>
+    <TrendWrapper id="features">
       <Title>CryptoCap Amazing Features</Title>
       <Subtitle>
         Explore sensational features to prepare your best investment in

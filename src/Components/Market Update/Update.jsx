@@ -19,7 +19,7 @@ const Update = () => {
   };
 
   return (
-    <UpdateWrapper>
+    <UpdateWrapper id="market_update">
       <SubHeader>Market Update</SubHeader>
       <CategoryContainer>
         <CategoryContentOne>

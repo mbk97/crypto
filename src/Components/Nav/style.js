@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const Nav = styled.div`
   display: flex;
@@ -32,23 +33,25 @@ export const NavListWrapper = styled.ul`
   width: 450px;
   justify-content: space-between;
 
-  .nav-item.active {
+  /* .nav-item.active {
     color: #0fae96;
-  }
+  } */
 
   @media (max-width: 768px) {
     /* display: none; */
-    width: 0px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     /* transition: all 0.5s ease-in-out; */
   }
 `;
 
-export const NavList = styled.li`
+export const NavList = styled(Link)`
   list-style: none;
   text-transform: capitalize;
   margin: 20px 0;
+  text-decoration: none;
+  color: #fff;
 `;
 
 export const LogoImg = styled.img``;

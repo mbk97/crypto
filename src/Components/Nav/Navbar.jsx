@@ -16,6 +16,7 @@ import { NavData } from "./NavData";
 import { GeneralBtn } from "Components/Global/Button";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 // import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -30,11 +31,17 @@ const Navbar = () => {
         <LogoImg src={Logo} alt="Logo" />
         <NavListWrapper>
           {NavData.map((item) => {
-            const { id, title, active } = item;
+            const { id, title, active, path } = item;
             return (
               <NavList
                 key={id}
                 className={`nav-item ${active ? "active" : ""}`}
+                to={path}
+                smooth={true}
+                duration={1000}
+                spy={true}
+                activeClass="active"
+                onClick={handleClick}
               >
                 {title}
               </NavList>

@@ -15,10 +15,11 @@ import {
 } from "./style";
 import { data } from "./getStartedData";
 import { CardImg } from "Components/Global/Card";
+import { Link } from "react-scroll";
 
 const GetStarted = () => {
   return (
-    <GetStartedWrapper>
+    <GetStartedWrapper id="get_started">
       <GeStartedContentOne>
         <SubHeader>How To Get Started</SubHeader>
         <Subtitle>

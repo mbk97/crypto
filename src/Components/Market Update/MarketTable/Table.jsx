@@ -14,9 +14,11 @@ import { action } from "typesafe-actions";
 import { marketUpdateTypes } from "Components/redux/actions/actionTypes";
 import { useSelector } from "react-redux";
 import { StatOne, StatTwo } from "assets";
+import { ErrorText } from "Components/Global/Title";
 
 const Table = ({ search }) => {
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   //set the skeleton loading
   const dispatch = useDispatch();
 
@@ -37,7 +39,7 @@ const Table = ({ search }) => {
   };
 
   const onError = (err) => {
-    console.log(err);
+    setErrorMsg(err.message);
     setLoading(false);
   };
   return (
@@ -78,6 +80,7 @@ const Table = ({ search }) => {
           );
         })}
       </TableComponent>
+      <ErrorText>{errorMsg}</ErrorText>
     </TableWrapper>
   );
 };

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CoinBtn } from "Components/Global/Button";
 import { Card, CardImg, CardText, CardTextTwo } from "Components/Global/Card";
-import { SubHeader, CoinTitle } from "Components/Global/Title";
+import { SubHeader, CoinTitle, ErrorText } from "Components/Global/Title";
 import React from "react";
 import {
   CardDivider,
@@ -25,6 +25,7 @@ import MarketSkeleton from "Components/Global/Loaders/MarketSkeleton";
 const MarketTrend = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState("");
   // console.log(loading);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ const MarketTrend = () => {
   };
 
   const onError = (err) => {
-    console.log(err);
+    setErrorMsg(err.message);
     setLoading(false);
   };
 
@@ -47,8 +48,9 @@ const MarketTrend = () => {
   console.log(trendData);
 
   return (
-    <MarketWrapper>
+    <MarketWrapper id="market_trend">
       <SubHeader>Market Trend</SubHeader>
+      <ErrorText>{errorMsg}</ErrorText>
       <MarketCardContainer>
         {loading && <MarketSkeleton />}
         {trendData.map((item) => {
